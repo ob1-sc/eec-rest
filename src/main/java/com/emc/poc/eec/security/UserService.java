@@ -8,23 +8,31 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by dev on 16/05/16.
+ * Service to retrieve user details from remote OrientDB idp database
+ *
+ * @author Simon O'Brien
  */
+@Component
 public class UserService implements UserDetailsService {
 
     @Autowired
     private PasswordEncoder passwordEncoder;
 
+    /**
+     * @see org.springframework.security.core.userdetails.UserDetailsService#loadUserByUsername(String)
+     */
+    @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 
         List<GrantedAuthority> authorities = new ArrayList<GrantedAuthority>();
         authorities.add(new SimpleGrantedAuthority("ROLE_USER"));
 
-        return new User("simon", passwordEncoder.encode("password"), authorities);
+        return new User("simon", passwordEncoder.encode("456789"), authorities);
     }
 }
