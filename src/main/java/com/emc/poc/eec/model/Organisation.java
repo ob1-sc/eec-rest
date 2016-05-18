@@ -1,11 +1,11 @@
 package com.emc.poc.eec.model;
 
 /**
- * Function model
+ * Organisation model
  *
  * @author Simon O'Brien
  */
-public class Function {
+public class Organisation {
 
     private String id;
     private String name;
@@ -29,18 +29,18 @@ public class Function {
     }
 
     /**
-     * Get the Function name
+     * Get the Organisation name
      *
-     * @return the Function name
+     * @return the Organisation name
      */
     public String getName() {
         return name;
     }
 
     /**
-     * Set the Function name
+     * Set the Organisation name
      *
-     * @param name the Function name
+     * @param name the Organisation name
      */
     public void setName(String name) {
         this.name = name;

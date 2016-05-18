@@ -2,7 +2,6 @@ package com.emc.poc.eec.service.function;
 
 import com.emc.poc.eec.config.RootConfig;
 import com.emc.poc.eec.model.Function;
-import com.emc.poc.eec.model.IdpUser;
 import org.apache.commons.lang.RandomStringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
@@ -25,7 +24,7 @@ public class FunctionServiceTest extends AbstractTestNGSpringContextTests {
     private FunctionService functionService;
 
     /**
-     * Test to get function by name
+     * Test to get Function by name
      */
     @Test
     public void testGetFunctionByName() throws Exception {
@@ -57,7 +56,7 @@ public class FunctionServiceTest extends AbstractTestNGSpringContextTests {
     }
 
     /**
-     * Test to create function
+     * Test to create Function
      */
     @Test
     public void testCreateFunction() {
