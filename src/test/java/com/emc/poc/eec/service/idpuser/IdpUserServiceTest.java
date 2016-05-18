@@ -15,6 +15,11 @@ import static org.hamcrest.CoreMatchers.notNullValue;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.testng.Assert.*;
 
+/**
+ * IDP User Service Tests
+ *
+ * @author Simon O'Brien
+ */
 @ContextConfiguration(classes = RootConfig.class)
 public class IdpUserServiceTest extends AbstractTestNGSpringContextTests {
 
@@ -91,5 +96,4 @@ public class IdpUserServiceTest extends AbstractTestNGSpringContextTests {
             }
         }
     }
-
 }

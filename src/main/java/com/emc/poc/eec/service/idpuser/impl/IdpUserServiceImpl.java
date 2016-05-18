@@ -137,6 +137,5 @@ public class IdpUserServiceImpl implements IdpUserService {
                 txGraph.shutdown();
             }
         }
-
     }
 }

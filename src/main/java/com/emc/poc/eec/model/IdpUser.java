@@ -1,7 +1,7 @@
 package com.emc.poc.eec.model;
 
 /**
- * Model for IDP IdpUser
+ * IDP User model
  *
  * @author Simon O'Brien
  */
@@ -12,58 +12,56 @@ public class IdpUser {
     private String password;
 
     /**
-     * Get internal ID
+     * Get the internal ID
      *
-     * @return internal ID
+     * @return the internal ID
      */
     public String getId() {
         return id;
     }
 
     /**
-     * Set internal ID
+     * Set the internal ID
      *
-     * @param id internal ID
+     * @param id the internal ID
      */
     public void setId(String id) {
         this.id = id;
     }
 
     /**
-     * Get user email
+     * Get the user email
      *
-     * @return user email
+     * @return the user email
      */
     public String getEmail() {
         return email;
     }
 
     /**
-     * Set user email
+     * Set the user email
      *
-     * @param email user email
+     * @param email the user email
      */
     public void setEmail(String email) {
         this.email = email;
     }
 
     /**
-     * Get user password (hash)
+     * Get the user password
      *
-     * @return user password (hash)
+     * @return the user password
      */
     public String getPassword() {
         return password;
     }
 
     /**
-     * Set user password (hash)
+     * Set the user password
      *
-     * @param password user password (hash)
+     * @param password the user password
      */
     public void setPassword(String password) {
         this.password = password;
     }
-
-
 }

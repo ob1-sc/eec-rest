@@ -38,7 +38,7 @@ public class RootConfig {
     }
 
     /**
-     * IDP Connection Factory Bean
+     * IDP DB Connection Factory Bean
      *
      * @return the connection factory
      */
@@ -48,6 +48,20 @@ public class RootConfig {
         String dbName = environment.getProperty("idp.db.name");
         String username = environment.getProperty("idp.db.username");
         String password = environment.getProperty("idp.db.password");
+        return new OrientGraphFactory(serverUrl + dbName, username, password);
+    }
+
+    /**
+     * Tennant DB Connection Factory Bean
+     *
+     * @return the connection factory
+     */
+    @Bean
+    public OrientGraphFactory tennantDbConnectionFactory() {
+        String serverUrl = environment.getProperty("orientdb.server.url");
+        String dbName = environment.getProperty("tennant.db.name");
+        String username = environment.getProperty("tennant.db.username");
+        String password = environment.getProperty("tennant.db.password");
         return new OrientGraphFactory(serverUrl + dbName, username, password);
     }
 }
