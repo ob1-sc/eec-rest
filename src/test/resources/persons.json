@@ -2,156 +2,188 @@
   {
     "email" : "andy.admin@acme.com",
     "name" : "Andy Admin",
-    "password" : "andya"
+    "functions" : [],
+    "organisations" : ["Acme"]
   },
   {
     "email" : "dave.docctrl@acme.com",
     "name" : "Dave Doc Control",
-    "password" : "davedc"
+    "functions" : ["Document Control"],
+    "organisations" : ["Acme"]
   },
   {
     "email" : "diane.docctrl@acme.com",
     "name" : "Diane Doc Control",
-    "password" : "dianedc"
+    "functions" : ["Document Control"],
+    "organisations" : ["Acme"]
   },
   {
     "email" : "dale.docctrl@pumpsrus.com",
     "name" : "Dale Doc Control",
-    "password" : "daledc"
+    "functions" : ["Document Control"],
+    "organisations" : ["Pumps r Us"]
   },
   {
     "email" : "dan.docctrl@whateveruneed.com",
     "name" : "Dan Doc Control",
-    "password" : "dandc"
+    "functions" : ["Document Control"],
+    "organisations" : ["What Ever You Need PLC"]
   },
   {
     "email" : "daisy.docctrl@drillsrus.com",
     "name" : "Daisy Doc Control",
-    "password" : "daisydc"
+    "functions" : ["Document Control"],
+    "organisations" : ["Drills r Us"]
   },
   {
     "email" : "paula.piping@acme.com",
     "name" : "Paula Piping",
-    "password" : "paulap"
+    "password" : "paulap",
+    "functions" : ["Piping"],
+    "organisations" : ["Acme"]
   },
   {
     "email" : "phil.piping@acme.com",
     "name" : "Phil Piping",
-    "password" : "philp"
+    "functions" : ["Piping"],
+    "organisations" : ["Acme"]
   },
   {
     "email" : "peter.piping@pumpsrus.com",
     "name" : "Peter Piping",
-    "password" : "peterp"
+    "functions" : ["Piping"],
+    "organisations" : ["Pumps r Us"]
   },
   {
     "email" : "pam.piping@pumpsrus.com",
     "name" : "Pam Piping",
-    "password" : "pamp"
+    "functions" : ["Piping"],
+    "organisations" : ["Pumps r Us"]
   },
   {
     "email" : "pat.piping@whateveruneed.com",
     "name" : "Pat Piping",
-    "password" : "patp"
+    "functions" : ["Piping"],
+    "organisations" : ["What Ever You Need PLC"]
   },
   {
     "email" : "mary.mechanical@acme.com",
     "name" : "Mary Mechanical",
-    "password" : "marym"
+    "functions" : ["Mechanical"],
+    "organisations" : ["Acme"]
   },
   {
     "email" : "matt.mechanical@acme.com",
     "name" : "Matt Mechanical",
-    "password" : "mattm"
+    "functions" : ["Mechanical"],
+    "organisations" : ["Acme"]
   },
   {
     "email" : "mike.mechanical@pumpsrus.com",
     "name" : "Mike Mechanical",
-    "password" : "mikem"
+    "functions" : ["Mechanical"],
+    "organisations" : ["Pumps r Us"]
   },
   {
     "email" : "mark.mechanical@whateveruneed.com",
     "name" : "Mark Mechanical",
-    "password" : "markm"
+    "functions" : ["Mechanical"],
+    "organisations" : ["What Ever You Need PLC"]
   },
   {
     "email" : "mavis.mechanical@drillsrus.com",
     "name" : "Mavis Mechanical",
-    "password" : "mavism"
+    "functions" : ["Mechanical"],
+    "organisations" : ["Drills r Us"]
   },
   {
     "email" : "colin.civil@acme.com",
     "name" : "Colin Civil",
-    "password" : "colinc"
+    "functions" : ["Civil"],
+    "organisations" : ["Acme"]
   },
   {
     "email" : "carly.civil@acme.com",
     "name" : "Carly Civil",
-    "password" : "carlyc"
+    "functions" : ["Civil"],
+    "organisations" : ["Acme"]
   },
   {
     "email" : "charles.civil@pumpsrus.com",
     "name" : "Charles Civil",
-    "password" : "charlesc"
+    "functions" : ["Civil"],
+    "organisations" : ["Pumps r Us"]
   },
   {
     "email" : "chuck.civil@whateveruneed.com",
     "name" : "Chuck Civil",
-    "password" : "chuckc"
+    "functions" : ["Civil"],
+    "organisations" : ["What Ever You Need PLC"]
   },
   {
     "email" : "claire.civil@drillsrus.com",
     "name" : "Claire Civil",
-    "password" : "clairec"
+    "functions" : ["Civil"],
+    "organisations" : ["Drills r Us"]
   },
   {
     "email" : "dana.drilling@acme.com",
     "name" : "Dana Drilling",
-    "password" : "danad"
+    "functions" : ["Drilling"],
+    "organisations" : ["Acme"]
   },
   {
     "email" : "dirk.drilling@acme.com",
     "name" : "Dirk Drilling",
-    "password" : "dirkd"
+    "functions" : ["Drilling"],
+    "organisations" : ["Acme"]
   },
   {
     "email" : "darren.drilling@drillsrus.com",
     "name" : "Darren Drilling",
-    "password" : "darrend"
+    "functions" : ["Drilling"],
+    "organisations" : ["Drills r Us"]
   },
   {
     "email" : "davina.drilling@drillsrus.com",
     "name" : "Davina Drilling",
-    "password" : "davinad"
+    "functions" : ["Drilling"],
+    "organisations" : ["Drills r Us"]
   },
   {
     "email" : "dirk.drilling@whateveruneed.com",
     "name" : "Dirk Drilling",
-    "password" : "dirkd"
+    "functions" : ["Drilling"],
+    "organisations" : ["What Ever You Need PLC"]
   },
   {
     "email" : "quentin.qa@acme.com",
     "name" : "Quentin Quality Assurance",
-    "password" : "quentinqa"
+    "functions" : ["Quality Assurance"],
+    "organisations" : ["Acme"]
   },
   {
     "email" : "quasim.qa@acme.com",
     "name" : "Quasim Quality Assurance",
-    "password" : "quasimqa"
+    "functions" : ["Quality Assurance"],
+    "organisations" : ["Acme"]
   },
   {
     "email" : "quincy.qa@pumpsrus.com",
     "name" : "Quincy Quality Assurance",
-    "password" : "quincyqa"
+    "functions" : ["Quality Assurance"],
+    "organisations" : ["Pumps r Us"]
   },
   {
     "email" : "quinn.qa@whateveruneed.com",
     "name" : "Quinn Quality Assurance",
-    "password" : "quinnqa"
+    "functions" : ["Quality Assurance"],
+    "organisations" : ["What Ever You Need PLC"]
   },
   {
     "email" : "qiu.qa@drillsrus.com",
     "name" : "Qiu Quality Assurance",
-    "password" : "qiuqa"
+    "functions" : ["Quality Assurance"],
+    "organisations" : ["Drills r Us"]
   }
 ]

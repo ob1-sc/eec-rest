@@ -39,6 +39,7 @@ public class IdpUserServiceImpl implements IdpUserService {
 
             idpUser = new IdpUser();
             idpUser.setId(userVertex.getId().toString());
+            idpUser.setName((String)userVertex.getProperty("name"));
             idpUser.setEmail((String)userVertex.getProperty("email"));
             idpUser.setPassword((String)userVertex.getProperty("password"));
 
@@ -63,13 +64,14 @@ public class IdpUserServiceImpl implements IdpUserService {
         try {
 
             txGraph = idpDbConnectionFactory.getTx();
-            Iterable<Vertex> users = txGraph.getVertices("User", new String[]{"email"}, new String[]{email});
+            Iterable<Vertex> userVertices = txGraph.getVertices("User", new String[]{"email"}, new String[]{email});
 
-            for(Vertex user : users) {
+            for(Vertex userVertex : userVertices) {
                 idpUser = new IdpUser();
-                idpUser.setId(user.getId().toString());
-                idpUser.setEmail((String)user.getProperty("email"));
-                idpUser.setPassword((String)user.getProperty("password"));
+                idpUser.setId(userVertex.getId().toString());
+                idpUser.setName((String)userVertex.getProperty("name"));
+                idpUser.setEmail((String)userVertex.getProperty("email"));
+                idpUser.setPassword((String)userVertex.getProperty("password"));
             }
 
         } finally {
@@ -94,6 +96,7 @@ public class IdpUserServiceImpl implements IdpUserService {
 
             txGraph = idpDbConnectionFactory.getTx();
             Vertex userVertex = txGraph.addVertex("class:User");
+            userVertex.setProperty("name", user.getName());
             userVertex.setProperty("email", user.getEmail());
             userVertex.setProperty("password", passwordEncoder.encode(user.getPassword()));
 
@@ -101,6 +104,7 @@ public class IdpUserServiceImpl implements IdpUserService {
 
             idpUser = new IdpUser();
             idpUser.setId(userVertex.getId().toString());
+            idpUser.setName((String)userVertex.getProperty("name"));
             idpUser.setEmail((String)userVertex.getProperty("email"));
             idpUser.setPassword((String)userVertex.getProperty("password"));
 

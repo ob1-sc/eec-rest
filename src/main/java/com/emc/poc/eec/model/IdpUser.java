@@ -8,6 +8,7 @@ package com.emc.poc.eec.model;
 public class IdpUser {
 
     private String id;
+    private String name;
     private String email;
     private String password;
 
@@ -27,6 +28,24 @@ public class IdpUser {
      */
     public void setId(String id) {
         this.id = id;
+    }
+
+    /**
+     * Get the user name
+     *
+     * @return the user name
+     */
+    public String getName() {
+        return name;
+    }
+
+    /**
+     * Set the user name
+     *
+     * @param name the user name
+     */
+    public void setName(String name) {
+        this.name = name;
     }
 
     /**

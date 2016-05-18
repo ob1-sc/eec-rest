@@ -37,6 +37,7 @@ public class IdpUserServiceTest extends AbstractTestNGSpringContextTests {
 
         // create a test user
         IdpUser testUser = new IdpUser();
+        testUser.setName(RandomStringUtils.randomAlphanumeric(32));
         testUser.setEmail(RandomStringUtils.randomAlphanumeric(32));
         testUser.setPassword(RandomStringUtils.randomAlphanumeric(32));
 
@@ -52,6 +53,7 @@ public class IdpUserServiceTest extends AbstractTestNGSpringContextTests {
             IdpUser getUser = idpUserService.getUserByEmail(createdUser.getEmail());
             assertThat(getUser, notNullValue());
             assertThat(getUser.getEmail(), equalTo(testUser.getEmail()));
+            assertThat(getUser.getName(), equalTo(testUser.getName()));
             assertThat(passwordEncoder.matches(testUser.getPassword(), createdUser.getPassword()), equalTo(true));
 
         } finally {
@@ -71,6 +73,7 @@ public class IdpUserServiceTest extends AbstractTestNGSpringContextTests {
 
         // create a test user
         IdpUser testUser = new IdpUser();
+        testUser.setName(RandomStringUtils.randomAlphanumeric(32));
         testUser.setEmail(RandomStringUtils.randomAlphanumeric(32));
         testUser.setPassword(RandomStringUtils.randomAlphanumeric(32));
 
@@ -86,6 +89,7 @@ public class IdpUserServiceTest extends AbstractTestNGSpringContextTests {
             IdpUser getUser = idpUserService.getUserById(createdUser.getId());
             assertThat(getUser, notNullValue());
             assertThat(getUser.getEmail(), equalTo(testUser.getEmail()));
+            assertThat(getUser.getName(), equalTo(testUser.getName()));
             assertThat(passwordEncoder.matches(testUser.getPassword(), createdUser.getPassword()), equalTo(true));
 
         } finally {
